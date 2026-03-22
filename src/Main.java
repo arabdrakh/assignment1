@@ -4,7 +4,6 @@ public class Main {
         System.out.println("Task 1:");
         part1.printDigits(5481);
 
-
         System.out.println("\nTask 2:");
         int[] arr = {3, 2, 4, 1};
         int sum = part1.sum(arr, arr.length);
@@ -15,5 +14,16 @@ public class Main {
 
         System.out.println("\nTask 4:");
         System.out.println(part1.factorial(5));
+
+        System.out.println("\nTask 5:");
+        System.out.println(part2.fib(5));
+        System.out.println(part2.fib(17));
+
+        System.out.println("\nTask 6:");
+        System.out.println(part2.power(2, 10));
+
+        System.out.println("\nTask 7:");
+        int[] n = {1, 4, 6, 2};
+        part2.reverse(n, n.length);
     }
 }
