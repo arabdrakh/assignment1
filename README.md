@@ -84,6 +84,10 @@ when n==0 there are no elements left to print, no need in recursion. `System.out
 recursive call to reduce until base case. it is kind of similiar(print before recurive call) to the code from the first lesson
 ![img_12.png](img_12.png)
 ![img_13.png](img_13.png)
+
+- ## 3rd part
+- task 8
+
 ## Summary
 In this assignment, I practiced recursion, including:
 - base cases

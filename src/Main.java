@@ -26,5 +26,15 @@ public class Main {
         System.out.println("\nTask 7:");
         int[] n = {1, 4, 6, 2};
         part2.reverse(n, n.length);
+
+
+        System.out.println("\n\nTask 8:");
+        System.out.println(part3.digits("123456", 0) ? "Yes" : "No");
+
+        System.out.println("\nTask 9:");
+        System.out.println(part3.countchars("hello"));
+
+        System.out.println("\nTask 10:");
+        System.out.println(part3.gcd(32, 48));
     }
 }
