@@ -9,10 +9,6 @@ Group: IT-2501
 - Part 3: Strings(3 tasks)
 
 
-## How to run
-* `run Main.java` 
-* or click on "play"
-
 # Output Examples
 - ## 1st part
 - task 1 
