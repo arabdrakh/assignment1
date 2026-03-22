@@ -27,14 +27,16 @@ public class Main {
         int[] n = {1, 4, 6, 2};
         part2.reverse(n, n.length);
 
-
         System.out.println("\n\nTask 8:");
         System.out.println(part3.digits("123456", 0) ? "Yes" : "No");
+        System.out.println(part3.digits("1234k6", 0) ? "Yes" : "No");
 
         System.out.println("\nTask 9:");
         System.out.println(part3.countchars("hello"));
+        System.out.println(part3.countchars("resursion"));
 
         System.out.println("\nTask 10:");
         System.out.println(part3.gcd(32, 48));
+        System.out.println(part3.gcd(10, 7));
     }
 }

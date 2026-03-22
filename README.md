@@ -88,10 +88,34 @@ recursive call to reduce until base case. it is kind of similiar(print before re
 - ## 3rd part
 - task 8
 
+function digits checks recursively if a string contains only digits using boolean true/false. `public static boolean digits(String s, int i) {` contains the string s and index in the string i.
+base case `if (i == s.length()) return true;` if we reached the end then all characgters were digits and it returns true. another base case `if (!Character.isDigit(s.charAt(i))) return false;`
+if current character is not digit then it returns false. Character.isDigit() is a built in java method that checks wheter a character is a digit. s.charAt(i) takes string s and gives the current character 
+at position index i.
+![img_14.png](img_14.png)
+![img_15.png](img_15.png)
+
+- task 9
+
+gunction countchars counts the number of characters in a string recursively. `public static int countchars(String s) {` function takes a string s and returns number of chars. base case `if (s.equals("")) return 0;` 
+if the string is empty it returns 0, no need in recursion. `return 1 + countchars(s.substring(1));` recursion where `s.substring(1)` gets the string without the first character and add 1 to the first character. repeats 
+until string is empty. like hello--1+ello--1+1+llo--... moving through the string one char at a time
+![img_16.png](img_16.png)
+![img_17.png](img_17.png)
+
+- task 10
+
+function gcd finds the greates common divisor of two nums using recursion. `public static int gcd(int a, int b) {` function takes two ints a and b. base case `if (b == 0) return a;` if the 2nd num b is 0 it returns a because 
+gcd = a. `return gcd(b, a % b);` recursively calls gcd, a%b is the remainder when a is divided by b until base case. for example, we have a=48 and b=32. 48%32 = 16. then a = 32 and b=16. 32%16=0 so gcd = a and a =16. or another 
+example gcd(10, 5), 10%5 = 0.  so it will be (5, 0). gcd = a. a=5
+![img_18.png](img_18.png)
+![img_19.png](img_19.png)
 ## Summary
-In this assignment, I practiced recursion, including:
+In this assignment i practiced recursion:
 - base cases
 - recursive calls
 - working with arrays, numbers, and strings
+- mathematical concepts
 
-All tasks work correctly.
+the most challenging parts for me were working with strings recursively like checking digits and counting characters and understanding the fibonacci recursion, because I had to carefully think about the base cases and how the function calls itself. 
+i used knowledge from courses i learnt before(oop, programming in school, some skills from learning go language) to do these tasks so a lot of things were easy except syntax of java
